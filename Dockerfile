@@ -1,12 +1,14 @@
 FROM node:alpine AS builder
 
+LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
+
 WORKDIR /app
 
-COPY package.json .
+COPY package.json package-lock.json ./
 
 RUN npm install && npm audit fix
 
-COPY . .
+COPY ./ ./
 
 RUN npm run build
 
@@ -16,12 +18,13 @@ FROM nginxinc/nginx-unprivileged:stable-alpine
 
 LABEL maintainer="Mohammed Essehemy <mohammedessehemy@gmail.com>"
 
+EXPOSE 8080
 
 USER root
 
 RUN echo 'server { \
     listen       8080; \
-    server_name  _; \
+    server_name  ـ; \
     gzip on; \
     gzip_types    text/plain application/javascript application/x-javascript text/javascript text/xml text/css; \
     location / { \
