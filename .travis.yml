@@ -1,6 +1,6 @@
-sudo: required
-services:
-  - docker
+#sudo: required
+#services:
+#  - docker
 dist: xenial
 language: node_js
 node_js:
