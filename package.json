@@ -28,7 +28,6 @@
     "clipboard": "^2.0.4",
     "core-js": "^2.6.5",
     "gatsby": "^2.8.5",
-    "npm": "^6.9.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
