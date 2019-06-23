@@ -1,42 +1,18 @@
-# gatsby-advanced-blog
-> Gatsby starter for advanced blog
+# gatsby-starter-strata
 
-## Install
-```
-$ git clone git@github.com:wonism/gatsby-advanced-blog.git <<PROJECT_NAME>>
-# Recommend you to delete `.git`
-$ cd <<PROJECT_NAME>> && rm -r .git
-```
+**This is a starter for Gatsby.js V2.**
 
-## Start with gatsby-cli
-```
-$ gatsby new <<PROJECT_NAME>> https://github.com/wonism/gatsby-advanced-blog
-```
+**The older V1 version of this starter can be found on the v1 branch**
 
-## Development
-```
-$ npm run dev
-```
+Gatsby starter based on the Strata site template, designed by [HTML5 UP](https://html5up.net/strata). Check out https://codebushi.com/gatsby-starters/ for more Gatsby starters and templates.
 
-## Build
-```
-$ npm run build
-```
+## Preview
 
-## ⚠️ Caution
-You **SHOULD** change some constants variable in `src/constants/index.js`.
-They are related with site informations, social media and Disqus.
+http://gatsby-strata.surge.sh/
 
-## Features
-- Post
-  - Pagination
-  - Categories
-  - Tags
-  - Search
-  - Put React Application into post
-  - Put Tweet into post
-  - Draft (set `hide` to `true`)
-  - Copy codes with clicking button
-- Portfolio
-- Resume
-- UI Theme
+## Installation
+
+Install this starter (assuming Gatsby is installed) by running from your CLI:
+`gatsby new gatsby-starter-strata https://github.com/ChangoMan/gatsby-starter-strata`
+
+Run `gatsby develop` in the terminal to start.
