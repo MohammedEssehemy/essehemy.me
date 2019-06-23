@@ -26,39 +26,41 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-d3fed57ee6dd8c18cb3a.js"
+    "url": "webpack-runtime-007c385d15679852bf13.js"
   },
   {
-    "url": "app-7728886188f510e6506d.js"
+    "url": "app-77a68403d6a565966412.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-446fef52348463121f7a.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-820031e2bc5c81f83b95.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "47641eed0b922b573bc7f966f34f3b73"
+    "revision": "11b9fe29bd60c9702fb6d537535e502f"
   },
   {
-    "url": "0-6a23d3517f83d0322003.js"
+    "url": "styles.19364f3221d0b3f8ad64.css"
   },
   {
-    "url": "component---src-pages-404-jsx-11731b7ccab798768e67.js"
+    "url": "styles-4eca6b3e01c09ec50cf9.js"
   },
   {
-    "url": "static/d/285/path---404-html-516-62a-0SUcWyAf8ecbYDsMhQkEfPzV8.json"
+    "url": "component---src-pages-404-js-b33c845b0941dbf4489d.js"
   },
   {
-    "url": "static/d/604/path---offline-plugin-app-shell-fallback-a-30-c5a-BawJvyh36KKFwbrWPg4a4aYuc8.json"
+    "url": "page-data/404.html/page-data.json",
+    "revision": "444a24ca9b44a8c2d05ff943dbfac278"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "97c9e9a5de0a3c3dc39eb79a018c7c10"
+    "revision": "26fddabe57933113828feddab9e4cd99"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, workbox.strategies.cacheFirst(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\page-data\/.*\/page-data\.json/, workbox.strategies.networkFirst(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, workbox.strategies.staleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, workbox.strategies.staleWhileRevalidate(), 'GET');
 
